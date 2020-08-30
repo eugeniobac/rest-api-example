@@ -20,12 +20,14 @@ public class PostController {
     @ResponseBody
     @GetMapping("/posts")
     public List<Post> getPosts(){
+        logger.info("Listing all the posts available");
         return service.getPosts();
     }
 
     @ResponseBody
     @GetMapping("/post/{id}")
-    public Post getPost(@PathVariable(required = true, name = "id") Long id){
+    public Post getPost(@PathVariable(name = "id") Long id){
+        logger.info("Getting post by id");
         return service.getPost(id);
     }
 
