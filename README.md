@@ -25,6 +25,7 @@ mvn spring-boot:run
 * Improve the unit tests to cover more scenarios. It's only a high level at the moment.
 * Create a cache layer in the integration api call layer.
 * In the get all comments method, we could use a HashMap to load all the comments. It would perform better than the ArrayList in the search by id.
+* Decouple the code a bit more. Program to interface could be used
 * Have a more detailed error messages.
 * Add some specific validations.
 * Add swagger api documentation.
